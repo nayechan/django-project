@@ -1,0 +1,38 @@
+{% extends "main/sitemap.html" %}
+{% block title %}
+Nayechan.com
+{% endblock %}
+{% block content %}
+<main class="container-fluid" id="bg">
+    <div id="test" style="margin-top: 30px;">
+      <br><br>
+        <h3>
+            나예찬의 홈페이지
+        </h3>
+        <p>
+          블로그 겸 테스트용 서버입니다.
+        </p>
+          <br><br>
+        <hr>
+        <div style="display: inline-block; width:100%">
+          <div style="float: left; display: inline-block; margin-left: 10px;">
+            <h4>
+              <b>
+                EXRave
+              </b>
+            </h4>
+            <h5>
+              Square Type Judgeline Rhythm game
+            </h5>
+            <br>
+            <a href = "{% url 'main:exrave' %}">
+                <button type="submit" class="btn btn-secondary mb-2">
+                    개발 중단
+                </button>
+            </a>
+          </div>
+        </div>
+        <hr>
+    </div>
+</main>
+{% endblock %}

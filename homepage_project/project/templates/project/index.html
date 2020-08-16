@@ -1,0 +1,21 @@
+{% extends "main/sitemap.html" %}
+{% block title %}
+Nayechan.com
+{% endblock %}
+{% block content %}
+<main class="container-fluid" id="bg">
+	<div class="project-body" style="margin:30px 10px 30px 10px">
+		{% for project in projects %}
+		<h2>{{ project.projectName }} version {{project.version}}</h2>
+		<p>
+			{{ project.pub_date|date:"j F Y" }}
+		</p>
+		<br>
+		<div class="body">
+			{{ project.formatted_markdown|safe }}
+		</div>
+		<hr>
+		{% endfor %}
+	</div>
+</main>
+{% endblock %}
